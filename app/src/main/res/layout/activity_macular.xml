@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgc"
+    tools:context=".MacularActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_image"
+        android:layout_width="406dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/image_view_main"
+            android:layout_width="391dp"
+            android:layout_height="208dp"
+            android:layout_alignStart="@+id/card_view_image"
+            android:layout_alignEnd="@+id/card_view_image" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_text"
+        android:layout_width="407dp"
+        android:layout_height="284dp"
+        android:layout_alignTop="@+id/card_view_image"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="135dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Detection: "
+                android:textSize="18sp" />
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="199dp"
+        android:layout_height="189dp"
+        android:layout_below="@+id/card_view_image"
+        android:layout_alignEnd="@+id/card_view_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="217dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="4dp"
+        app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="275dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@+id/card_view_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="415dp"
+        android:text="Macular Degeneration"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
